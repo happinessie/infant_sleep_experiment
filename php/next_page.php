@@ -38,7 +38,7 @@
 				break;
 			case "instruction":
 				if ($condition==1) {
-					$new_phase = "baseline";
+					$new_phase = "baseline_post";
 					$result_URL = "create.html";
 				}
 				if ($condition==2 || $condition==3) {
@@ -54,10 +54,10 @@
 				$result_URL = "create.html?";
 				break;
 			case "rehearsal-feedback":
-				$new_phase = "baseline";
+				$new_phase = "baseline_post";
 				$result_URL = "create.html";
 				break;
-			case "baseline":
+			case "baseline_post":
 				if ($condition==1 || $condition==2) {
 					$new_phase = "generalization_post";
 					$result_URL = "assess.html";
