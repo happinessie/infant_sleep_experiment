@@ -7,16 +7,12 @@
 		<link rel='stylesheet prefetch'	href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/questionsArray.js"></script>
-		
-		<script>
-			alert(questions[0].responses[0].rText);
-			if (questions[0].responses[0].hasOwnProperty("nextQ")) alert("response has next question");
-			else alert("go to question for next question");
-		</script>
+		<script src="js/common_functions.js"></script>
+		<script src="js/baseline_functions.js"></script>
 		
 	</head>
 
-	<body>
+	<body onLoad="window.renderQuestion(3)">
 		<div id="topBox">
 			<h1 class="baselineheader">Thank you for participating!</h1>
 			<h2>Please answer the question below to the best of your knowledge.</h2>
@@ -24,15 +20,15 @@
 
 		<div id="leftBox">
 			<div class="imageWrapper">
-				<p>TEST TEST TEST</p>
+				<p id="testP">LOADING...</p>
 				<img src="images/emptyRoom.jpg" class="image" />
 
 			</div>
 		</div>
 
 		<div id="rightBox">
-			<div class="questions">I am the question</div>
-			<div class="answers">
+			<div id="question">I am the question</div>
+			<div id="answers">
 				<input type="radio" name="Question 1" value="Answer 1" checked>
 				Answer 1.0 <br> <input type="radio" name="Question 1"
 					value="Answer 2"> Answer 2.0

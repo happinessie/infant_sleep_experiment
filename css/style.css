@@ -168,12 +168,12 @@ h2 {
 	float: right;
 }
 
-.questions {
+#question {
 	color: white;
 	margin: 20px 0px;
 }
 
-.answers {
+#answers {
 	color: white;
 }
 
