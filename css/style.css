@@ -110,6 +110,10 @@ body {
 }
 
 p {
+	margin: 0px;
+}
+
+p.center {
 	text-align: center;
 	font-size: 14px;
 	font-family: 'Arial', sans-serif;
