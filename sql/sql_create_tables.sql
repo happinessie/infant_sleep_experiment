@@ -6,8 +6,9 @@ CREATE TABLE Participants
 	exp_condition int NOT NULL,
 	exp_phase varchar(40) NOT NULL,
 	exp_iteration int NOT NULL,
-	question_path varchar(40),
-	display_ops_history varchar(100),
+	question_path varchar(200),
+	selection_history varchar(400),
+	display_ops_history varchar(400),
 	PRIMARY KEY (participant_id)
 );
 

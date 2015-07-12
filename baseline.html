@@ -12,26 +12,24 @@
 		
 	</head>
 
-	<body onLoad="window.renderQuestion(3)">
+	<body onLoad="window.baselineOnLoad()">
 		<div id="topBox">
 			<h1 class="baselineheader">Thank you for participating!</h1>
 			<h2>Please answer the question below to the best of your knowledge.</h2>
 		</div>
 
 		<div id="leftBox">
-			<div class="imageWrapper">
-				<p id="testP">LOADING...</p>
-				<img src="images/emptyRoom.jpg" class="image" />
+			<div id="imageWrapper">
+				<img src="images/emptyRoom.jpg" id="displayBG" />
+				<img src="images/test_baby.gif" class="testBaby" />
 
 			</div>
 		</div>
 
 		<div id="rightBox">
-			<div id="question">I am the question</div>
+			<div id="question"></div>
 			<div id="answers">
-				<input type="radio" name="Question 1" value="Answer 1" checked>
-				Answer 1.0 <br> <input type="radio" name="Question 1"
-					value="Answer 2"> Answer 2.0
+				
 			</div>
 		</div>
 	</body>
