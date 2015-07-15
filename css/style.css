@@ -192,6 +192,10 @@ h2 {
 	width: 100%;
 }
 
+.pseudoform_button{
+	height: 1.2em;
+}
+
 .testBaby {
 	position: absolute;
 	left: 75%;

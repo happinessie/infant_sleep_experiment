@@ -31,7 +31,7 @@ var questions =
 		"qText": "What is the answer to this question?",
 		"qShortText": "this question",
 		"nextQ": "ending",
-		"multiple": false,
+		"multiple": true,
 		"responses":
 		[
 			{
